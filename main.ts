@@ -15,7 +15,7 @@ input.onButtonPressed(Button.B, function () {
     radio.sendString("R")
 })
 basic.showIcon(IconNames.Surprised)
-radio.setGroup(1)
+radio.setGroup(2)
 basic.clearScreen()
 basic.forever(function () {
 	
