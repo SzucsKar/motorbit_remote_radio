@@ -1,18 +1,42 @@
 input.onButtonPressed(Button.A, function () {
-    basic.showString("L")
     radio.sendString("L")
+    basic.showLeds(`
+        . . # . .
+        . # . . .
+        # . . . .
+        . # . . .
+        . . # . .
+        `)
 })
 input.onGesture(Gesture.Shake, function () {
-    basic.showString("STOP")
-    radio.sendString("STOP")
+    radio.sendString("S")
+    basic.showLeds(`
+        . . . . .
+        . # . # .
+        . # . # .
+        . # . # .
+        . . . . .
+        `)
 })
 input.onButtonPressed(Button.AB, function () {
-    basic.showString("F")
     radio.sendString("F")
+    basic.showLeds(`
+        . . # . .
+        . # . # .
+        # . . . #
+        . . . . .
+        . . . . .
+        `)
 })
 input.onButtonPressed(Button.B, function () {
-    basic.showString("R")
     radio.sendString("R")
+    basic.showLeds(`
+        . . # . .
+        . . . # .
+        . . . . #
+        . . . # .
+        . . # . .
+        `)
 })
 basic.showIcon(IconNames.Surprised)
 radio.setGroup(2)
