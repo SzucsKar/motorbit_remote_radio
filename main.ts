@@ -17,6 +17,8 @@ input.onGesture(Gesture.Shake, function () {
         . # . # .
         . . . . .
         `)
+    basic.pause(1000)
+    basic.clearScreen()
 })
 input.onButtonPressed(Button.AB, function () {
     radio.sendString("F")
@@ -41,6 +43,3 @@ input.onButtonPressed(Button.B, function () {
 basic.showIcon(IconNames.Happy)
 radio.setGroup(2)
 basic.clearScreen()
-basic.forever(function () {
-	
-})
