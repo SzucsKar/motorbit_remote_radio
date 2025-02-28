@@ -38,7 +38,7 @@ input.onButtonPressed(Button.B, function () {
         . . # . .
         `)
 })
-basic.showIcon(IconNames.Surprised)
+basic.showIcon(IconNames.Happy)
 radio.setGroup(2)
 basic.clearScreen()
 basic.forever(function () {
