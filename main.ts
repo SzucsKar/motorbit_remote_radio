@@ -49,6 +49,6 @@ input.onGesture(Gesture.TiltLeft, function () {
 input.onGesture(Gesture.ScreenUp, function () {
     radio.sendString("SC")
 })
-basic.showIcon(IconNames.Happy)
+basic.showIcon(IconNames.yes)
 radio.setGroup(2)
 basic.clearScreen()
